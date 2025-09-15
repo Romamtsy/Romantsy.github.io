@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  
+  <title>EXCEL学习记录 | Romantsy&#39;s blog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="EXCEL学习blog1.统计每个人的排班次数1.把所有名字放到一列，然后筛选排序成一个单独的excel表单或者是扇形图 2.但其实第一种的思路可以用COUNTIF统计函数实现（b站收藏夹有记录） 比如“电话热线需要统计有多少人参与且每个人参与了几次这种情况”（较简单） 操作详情：1.鼠标放到第一个单元格下边线加上shift可以选取一列的然后给所有数据放一列； 2.第二列第一格“&#x3D;COU">
+<meta property="og:type" content="article">
+<meta property="og:title" content="EXCEL学习记录">
+<meta property="og:url" content="http://example.com/2024/08/15/EXCEL%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/index.html">
+<meta property="og:site_name" content="Romantsy&#39;s blog">
+<meta property="og:description" content="EXCEL学习blog1.统计每个人的排班次数1.把所有名字放到一列，然后筛选排序成一个单独的excel表单或者是扇形图 2.但其实第一种的思路可以用COUNTIF统计函数实现（b站收藏夹有记录） 比如“电话热线需要统计有多少人参与且每个人参与了几次这种情况”（较简单） 操作详情：1.鼠标放到第一个单元格下边线加上shift可以选取一列的然后给所有数据放一列； 2.第二列第一格“&#x3D;COU">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="http://example.com/image/2.png">
+<meta property="og:image" content="http://example.com/image/1.png">
+<meta property="og:image" content="http://example.com/image/%E6%B1%87%E6%80%BB%E5%90%8C%E4%B8%80%E5%90%8D%E7%A7%B0%E6%95%B0%E6%8D%AE.png">
+<meta property="article:published_time" content="2024-08-15T14:03:51.000Z">
+<meta property="article:modified_time" content="2024-08-21T12:32:02.551Z">
+<meta property="article:author" content="John Doe">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/image/2.png">
+  
+    <link rel="alternate" href="/atom.xml" title="Romantsy's blog" type="application/atom+xml">
+  
+  
+    <link rel="shortcut icon" href="/favicon.png">
+  
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+    
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+
+  
+  
+<meta name="generator" content="Hexo 7.3.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Romantsy&#39;s blog</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"><span class="fa fa-bars"></span></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+        
+          <a class="nav-icon" href="/atom.xml" title="RSS Feed"><span class="fa fa-rss"></span></a>
+        
+        <a class="nav-icon nav-search-btn" title="Search"><span class="fa fa-search"></span></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://example.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <div class="outer">
+        <section id="main"><article id="post-EXCEL学习记录" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2024/08/15/EXCEL%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/" class="article-date">
+  <time class="dt-published" datetime="2024-08-15T14:03:51.000Z" itemprop="datePublished">2024-08-15</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="p-name article-title" itemprop="headline name">
+      EXCEL学习记录
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h1 id="EXCEL学习blog"><a href="#EXCEL学习blog" class="headerlink" title="EXCEL学习blog"></a>EXCEL学习blog</h1><h2 id="1-统计每个人的排班次数"><a href="#1-统计每个人的排班次数" class="headerlink" title="1.统计每个人的排班次数"></a>1.统计每个人的排班次数</h2><p>1.把所有名字放到一列，然后筛选排序成一个单独的excel表单或者是扇形图</p>
+<p>2.但其实第一种的思路可以用COUNTIF统计函数实现（b站收藏夹有记录）</p>
+<p>比如“电话热线需要统计有多少人参与且每个人参与了几次这种情况”（较简单）</p>
+<h2 id="操作详情："><a href="#操作详情：" class="headerlink" title="操作详情："></a>操作详情：</h2><p>1.鼠标放到第一个单元格下边线加上shift可以选取一列的然后给所有数据放一列；</p>
+<p>2.第二列第一格“&#x3D;COUNTIF(区域（选第一列），第二列第一格)” 然后向下填充</p>
+<p>3.将第二列数据复制后“粘贴成数据”</p>
+<p>4.在数据栏目删除重复项后排序</p>
+<h2 id="2-一个单元格中有名字用逗号隔开，统计排班次数"><a href="#2-一个单元格中有名字用逗号隔开，统计排班次数" class="headerlink" title="2.一个单元格中有名字用逗号隔开，统计排班次数"></a>2.一个单元格中有名字用逗号隔开，统计排班次数</h2><p>其实这个的话只是想在排班的时候统计人数以及次数用，感觉并没有那么多必要去搞，但还是可以去学习一下的万一以后有用的到的地方呢（</p>
+<p>但感觉如果排班的话先把每个人的课表统计了然后每个人的在哪个时间段有空了也统计了问题也就不大了其实</p>
+<p>到时候要排班了对着有空闲时间的人塞就行，然后注意每个人的次数尽量控制好就行（呃呃）</p>
+<p>感觉是可以学着如何处理一下这种类型的表单数据的，万一用的到呢（但感觉和python爬虫也差不多意思了）</p>
+<h2 id="多行文字合并成一行并用顿号隔开"><a href="#多行文字合并成一行并用顿号隔开" class="headerlink" title="多行文字合并成一行并用顿号隔开"></a>多行文字合并成一行并用顿号隔开</h2><p><img src="/image/2.png"></p>
+<h2 id="用顿号隔开的文字每部分换行隔开"><a href="#用顿号隔开的文字每部分换行隔开" class="headerlink" title="用顿号隔开的文字每部分换行隔开"></a>用顿号隔开的文字每部分换行隔开</h2><p><img src="/image/1.png"></p>
+<h2 id="汇总同一名称数据"><a href="#汇总同一名称数据" class="headerlink" title="汇总同一名称数据"></a>汇总同一名称数据</h2><p>1.其实很简单，图片呈现的是一列名字一列数据</p>
+<p>先把名字单独放一列然后“数据”————“删除相同项”</p>
+<p>然后再用图片里面的函数 &#x3D;SUMIF(名字列（锁定）,单独一列的名字（删完重复后的列）,数据列（锁定）)</p>
+<p><img src="/image/%E6%B1%87%E6%80%BB%E5%90%8C%E4%B8%80%E5%90%8D%E7%A7%B0%E6%95%B0%E6%8D%AE.png"></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2024/08/15/EXCEL%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/" data-id="cm03u3qr80002nksqfglb7jsa" data-title="EXCEL学习记录" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2024/11/02/24-11-2-plan/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          24.11.2 plan
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2024/08/10/8-10blog/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">8.10blog</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2024/11/">November 2024</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2024/08/">August 2024</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2024/07/">July 2024</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2024/11/02/24-11-2-plan/">24.11.2 plan</a>
+          </li>
+        
+          <li>
+            <a href="/2024/08/15/EXCEL%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/">EXCEL学习记录</a>
+          </li>
+        
+          <li>
+            <a href="/2024/08/10/8-10blog/">8.10blog</a>
+          </li>
+        
+          <li>
+            <a href="/2024/07/31/24-7-31-%E5%AF%B9%E4%BA%8E%E4%B8%93%E4%B8%9A%E8%B5%B0%E5%90%91%E7%9A%84%E6%83%B3%E6%B3%95/">24.7.31 对于专业走向的想法</a>
+          </li>
+        
+          <li>
+            <a href="/2024/07/25/24-7-25%E6%97%A5%E5%BF%97/">24.7.25日志</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+      &copy; 2025 John Doe<br>
+      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+
+<script src="/js/jquery-3.6.4.min.js"></script>
+
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+
+  </div>
+</body>
+</html>
